@@ -53,20 +53,20 @@ window.addEventListener('DOMContentLoaded', event => {
 
     var options = {
         strings: [
-            "App",
-            "MVP",
-            "SaaS",
-            "Platform",
-            "Marketplace",
-            "Toolbox",
-            "Backoffice",
-            "CRM",
-            "Prototype"
+            '<span class="one">App</span>',
+            '<span class="two">MVP</span>',
+            '<span class="three">SaaS</span>',
+            '<span class="four">Platform</span>',
+            '<span class="five">Marketplace</span>',
+            '<span class="six">Toolbox</span>',
+            '<span class="seven">Backoffice</span>',
+            '<span class="eight">CRM</span>',
+            '<span class="one">Prototype</span>'
         ],
         typeSpeed: 70,
         fadeOut: true,
         shuffle: true,
-        loop: true
+        loop: true,
       };
       
     var typed = new Typed('.typing', options);
