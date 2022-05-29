@@ -11481,7 +11481,7 @@ header.masthead .typing .eight {
   header.masthead .masthead-heading {
     font-size: 4.5rem;
     font-weight: 700;
-    line-height: 4.5rem;
+    line-height: 5.5rem;
     margin-bottom: 3rem;
   }
 }
@@ -11771,7 +11771,6 @@ header.masthead .typing .eight {
   background: var(--bs-indigo);
 }
 
-
 .team-member h4, .team-member .h4 {
   margin-top: 1.5rem;
   margin-bottom: 0;
@@ -11784,6 +11783,11 @@ header.masthead .typing .eight {
 .testimonial img {
   width: 8rem;
   height: 8rem;
+}
+
+.testimonial-text {
+  font-weight: 500;
+  font-size: 1rem;
 }
 
 section#contact {
@@ -11845,7 +11849,6 @@ section#contact form#contactForm :-ms-input-placeholder {
   flex-direction: column;
   text-align: center;
   margin-bottom: 12.5rem;
-  gap: 4rem;
 }
 
 .service-block.reversed {
@@ -11868,7 +11871,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 .service-block-list li {
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
   margin-left: 1rem;
   position: relative;
   color: #FDE047;
@@ -11878,6 +11881,9 @@ section#contact form#contactForm :-ms-input-placeholder {
   color: #36B633;
 }
 
+.service-block-description {
+  margin-bottom: 1rem;
+}
 
 .service-block-list li:last-child {
   margin-bottom: 0;
@@ -11900,7 +11906,7 @@ section#contact form#contactForm :-ms-input-placeholder {
   .service-block {
     display: flex;
     flex-direction: row;
-    align-content: space-between;
+    justify-content: space-around;
     align-items: center;
     text-align: inherit;
   }
@@ -11911,6 +11917,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 
   .service-block-description {
     width: 50%;
+    margin: 1rem;
   }
 
   .service-block-list {
@@ -11918,8 +11925,8 @@ section#contact form#contactForm :-ms-input-placeholder {
     margin: 0;
   }
 
-  .service-block-list li::before {
-    content: "";
+  .service-block-list li {
+    margin-bottom: 2rem;
   }
 
   .service-block-list li h4 {
