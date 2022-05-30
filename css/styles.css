@@ -4658,6 +4658,16 @@ textarea.form-control-lg {
   }
 }
 
+.purpose-list {
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .purpose-list-item {
+    width: 45%;
+  }
+}
+
 .purpose-image {
   height: 10rem;
 }
