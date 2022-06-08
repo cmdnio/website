@@ -11842,15 +11842,18 @@ section#contact form#contactForm :-ms-input-placeholder {
   }
 }
 
-.service-block {
+.service-block-container {
   display: flex;
   flex-direction: column;
-  text-align: center;
-  margin-bottom: 5rem;
 }
 
-.service-block.reversed {
-  flex-direction: column;
+.service-block {
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+.service-block:last-child {
+  margin-bottom: 0;
 }
 
 .service-block h2, .service-block h3 {
@@ -11860,7 +11863,6 @@ section#contact form#contactForm :-ms-input-placeholder {
 .service-block h3 {
   font-size: 1.25rem;
 }
-
 
 .service-block-list {
   margin-left: 2rem;
@@ -11875,7 +11877,7 @@ section#contact form#contactForm :-ms-input-placeholder {
   color: #FDE047;
 }
 
-.reversed .service-block-list li {
+.service-block-list.green li {
   color: #36B633;
 }
 
@@ -11892,39 +11894,29 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-size: 1rem;
   margin: 0;
   color: #fff;
-  /* text-decoration: underline;
-  text-decoration-color: #FDE047; */
-}
-
-.reversed .service-block-list li h4 {
-  text-decoration-color: #36B633;
 }
 
 @media (min-width: 768px) { 
-  .service-block {
-    display: flex;
+  .service-block-container {
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    text-align: inherit;
-  }
-
-  .service-block.reversed {
-    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 5rem;
   }
 
   .service-block-description {
-    width: 50%;
-    margin: 1rem;
+    margin-bottom: 2rem;
   }
-
-  .service-block-list {
-    width: 50%;
+  .service-block {
+    text-align: inherit;
     margin: 0;
   }
 
+  .service-block-list {
+    margin-left: 0;
+  }
+
   .service-block-list li {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 
   .service-block-list li h4 {
