@@ -11741,7 +11741,7 @@ header.masthead .typing .eight {
     padding: 0 100px 20px 20px;
   }
 }
-.team-member {
+.team-member, .community-item {
   margin-bottom: 3rem;
   text-align: center;
 }
@@ -11749,6 +11749,12 @@ header.masthead .typing .eight {
   width: 14rem;
   height: 14rem;
   border: 3px solid #fff;
+  padding: 8px;
+}
+
+.community-item img {
+  width: 14rem;
+  height: 14rem;
   padding: 8px;
 }
 
