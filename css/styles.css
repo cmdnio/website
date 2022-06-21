@@ -11755,6 +11755,7 @@ header.masthead .typing .eight {
 .community-item img {
   height: 12rem;
   padding: 8px;
+  margin-bottom: 0.5rem;
 }
 
 .team-member.artem img {
