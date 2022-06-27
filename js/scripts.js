@@ -65,7 +65,7 @@ window.addEventListener('DOMContentLoaded', event => {
         ],
         typeSpeed: 70,
         fadeOut: true,
-        shuffle: true,
+        shuffle: false,
         loop: true,
       };
       
