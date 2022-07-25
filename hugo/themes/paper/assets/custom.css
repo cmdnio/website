@@ -27,6 +27,12 @@ article blockquote {
   font-size: 32px;
 }
 
+@media (min-width: 1024px) {
+  .blog-list {
+    flex-direction: row;
+  }
+}
+
 .list-item {
   gap: 24px;
 }
