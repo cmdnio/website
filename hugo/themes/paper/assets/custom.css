@@ -70,5 +70,15 @@ ul.breadcrumbs li:not(:first-child)::before {
 }
 
 footer {
+  flex-direction: column;
   justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+@media (min-width: 1024px) {
+  footer {
+   flex-direction: row;
+  }
 }
