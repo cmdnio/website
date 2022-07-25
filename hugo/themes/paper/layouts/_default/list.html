@@ -11,6 +11,7 @@ Searching by Tag: <h1 class="mb-24">{{ .Title }}</h1>
 {{ $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}<!---->
 {{ end }}
 
+
 <!-- Articles -->
 {{ $paginator := .Paginate $pages }} {{ range $index, $page := $paginator.Pages }}<!---->
 
@@ -38,17 +39,20 @@ Searching by Tag: <h1 class="mb-24">{{ .Title }}</h1>
   {{ end }}
 </div>
 {{ end }}<!---->
-
 {{ end }}
 
-<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0"> 
-  <h2 class="!my-0 pb-1 !leading-none">{{ .Title }}</h2>
-  <time class="text-sm opacity-60">{{ .Date | time.Format ":date_medium" }}</time>
+<section class="relative flex list-item my-10 first-of-type:mt-0 last-of-type:mb-0"> 
+  <div><img class="list-item-thumbnail my-0" src="{{ .Param "image" }}" /></div>
+  <div>
+    <h2 class="!my-0 pb-1 !leading-none">{{ .Title }}</h2>
+    <time class="text-sm opacity-60">{{ .Date | time.Format ":date_medium" }}</time>
+    <div>{{ .Summary }}</div>
+    <a class="" href="{{ .Permalink }}">Read more</a>
+  </div>
   <a class="absolute inset-0" href="{{ .Permalink }}"></a>
-  <img class="list-item-thumbnail" src="{{ .Param "image" }}" />
+
 </section>
 {{ end }}
-
 <!-- Main Nav -->
 {{ if gt $paginator.TotalPages 1 }}
 <nav class="mt-24 flex">

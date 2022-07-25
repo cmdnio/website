@@ -26,3 +26,26 @@
 article blockquote {
   font-size: 32px;
 }
+
+.list-item {
+  gap: 24px;
+}
+
+.list-item-thumbnail {
+  max-width: 500px;
+}
+
+.breadcrumbs {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.breadcrumbs  .breadcrumbs-list-item {
+  padding-left: 0px;
+}
+
+ul.breadcrumbs li:not(:first-child)::before {
+  content: '/';
+  margin: 0 4px;
+}

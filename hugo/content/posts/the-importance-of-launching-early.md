@@ -1,7 +1,7 @@
 ---
 title: "The importance of launching early"
 date: 2022-07-19
-image: /blog/images/the-importance-of-launching-early-hero.png
+image: /blog/images/the-importance-of-launching-early-hero.jpg
 tags: ['startup', 'mvp development', 'app development', 'entrepreneurship', 'early stage']
 author: Artem Loginov, Product Manager & Co-Founder 
 ---
