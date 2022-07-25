@@ -31,8 +31,11 @@ article blockquote {
   gap: 24px;
 }
 
-.list-item-thumbnail {
-  max-width: 500px;
+
+@media (min-width: 1024px) {
+  .list-item-thumbnail {
+    max-width: 500px;
+  }
 }
 
 .breadcrumbs {
