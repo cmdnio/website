@@ -1,0 +1,18 @@
+baseURL = 'https://cmdn.io/'
+languageCode = 'en-us'
+title = 'Cmd + N Blog'
+theme = "paper"
+
+[params]
+    # show header social icons
+    twitter = 'cmdnio'     # twitter.com/YOUR_TWITTER_ID
+    linkedin = 'cmdnio'       # github.com/YOUR_GITHUB_ID
+
+    # show home page profile
+    # avatar = 'GRAVATAR_EMAIL'       # Gravatar email or image url(e.g. "https://deno.land/logo.svg")
+    name = 'Cmd + N Blog'
+    bio = 'We build MVPs for startups and greenfield projects for established companies. We can help you define the requirements necessary to test your business hypothesis and bring your idea into reality using the latest technological stack.'
+
+    # misc
+    disableHLJS = false              # disable requesting highlight.js
+    monoDarkIcon = true             # show monochrome dark mode icon
