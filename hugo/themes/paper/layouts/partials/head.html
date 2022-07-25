@@ -39,28 +39,9 @@
    <!-- Google fonts-->
    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700" rel="stylesheet" type="text/css" />
   
-  <!-- Preload -->
-  <link
-    rel="preload"
-    as="image"
-    href="{{ `theme.{{ if site.Params.monoDarkIcon }}svg{{ else }}png{{ end }}` | absURL }}"
-  />
-
-  {{ $avatar_url := $.Scratch.Get "avatar_url" }}
-  <!---->
-  {{ if $avatar_url }}
-  <link rel="preload" as="image" href="{{ $avatar_url }}" />
-  {{ end }}
-  <!---->
-
-  {{ range $.Scratch.Get "social_list" }}
-  <link rel="preload" as="image" href="{{ printf `%s.svg` . | absURL }}" />
-  {{ end }}
-
   <!-- Favicon -->
   <link rel="icon" href="{{ `favicon.ico` | absURL }}" />
   <link rel="apple-touch-icon" href="{{ `apple-touch-icon.png` | absURL }}" />
-
 
   <!-- Generator -->
   {{ hugo.Generator }}
