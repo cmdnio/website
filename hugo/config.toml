@@ -17,3 +17,47 @@ publishDir = "../website/blog"
     # misc
     disableHLJS = false              # disable requesting highlight.js
     monoDarkIcon = true             # show monochrome dark mode icon
+
+
+[menu]
+[[menu.main]]
+  identifier = 'purpose'
+  name = 'purpose'
+  url = 'https://cmdn.io/#purpose'
+  weight = -200
+
+[[menu.main]]
+  identifier = 'services'
+  name = 'services'
+  url = 'https://cmdn.io/#services'
+  weight = -190
+
+[[menu.main]]
+  identifier = 'testimonials'
+  name = 'testimonials'
+  url = 'https://cmdn.io/#testimonials'
+  weight = -170
+
+[[menu.main]]
+  identifier = 'team'
+  name = 'team'
+  url = 'https://cmdn.io/#team'
+  weight = -160
+
+[[menu.main]]
+  identifier = 'team'
+  name = 'team'
+  url = 'https://cmdn.io/#team'
+  weight = -150
+
+[[menu.main]]
+  identifier = 'blog'
+  name = 'blog'
+  url = 'https://cmdn.io/blog'
+  weight = -140
+
+[[menu.main]]
+  identifier = 'contact'
+  name = 'contact'
+  url = 'https://cmdn.io/#contact'
+  weight = -130

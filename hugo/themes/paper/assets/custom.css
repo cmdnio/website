@@ -10,9 +10,19 @@
   align-items: center;
 }
 
+.top-menu-item {
+  text-transform: uppercase;
+}
+
+.top-menu-item:hover {
+  color: #4EDBCD;
+}
+
 .btn-social {
   height: 2.5rem;
   width: 2.5rem;
+    margin-right: 0.5rem;
+  margin-left: 0.5rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -57,4 +67,8 @@ article blockquote {
 ul.breadcrumbs li:not(:first-child)::before {
   content: '/';
   margin: 0 4px;
+}
+
+footer {
+  justify-content: space-between;
 }

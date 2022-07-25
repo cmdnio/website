@@ -1,6 +1,25 @@
-<footer class="opaco mx-auto flex h-[5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60">
-  <div class="mr-auto">
-    &copy; {{ now.Year }}
-    <a class="link" href="{{ `` | absURL }}">{{ site.Title }}</a>
+<footer class="mx-auto flex justify-between h-[5rem] max-w-3xl items-center px-8 text-[0.9em]">
+  <div>
+    Copyright  &copy; {{ now.Year }}
+    <a class="link" href="https://cmdn.io/">Cmd + N</a>
+  </div>
+  <div>
+    {{ with $.Scratch.Get "social_list" }}
+    <nav
+      class="justify-center"
+    >
+      {{ range . }}<!---->
+      <a class="btn-social"
+        href="{{ if eq . `rss` }} {{ `index.xml` | absURL }} {{ else }} https://{{ . }}.com/{{ site.Params.Get . }} {{ end }}"
+        target="_blank" aria-label="{{ . }}">
+        <i class="fab fa-{{ . }}"></i>
+      </a>
+
+      {{ end }}<!---->
+    </nav>
+    {{ end }}<!---->
+  </div>
+  <div>
+    <a class="link" href="https://cmdn.io/privacy-policy">Privacy Policy</a>
   </div>
 </footer>
