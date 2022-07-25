@@ -1,7 +1,8 @@
-baseURL = 'https://cmdn.io/'
+baseURL = 'https://cmdn.io/blog'
 languageCode = 'en-us'
 title = 'Cmd + N Blog'
 theme = "paper"
+publishDir = "../website/blog"
 
 [params]
     # show header social icons

@@ -83,3 +83,5 @@ dist
 server-build/
 test/**/videos/
 test/**/screenshots/
+
+blog
